@@ -8,6 +8,8 @@ anyhow = "1.0.102"
 async-openai = { version = "0.41.0", features = ["image"] }
 base64 = "0.22.1"
 rmcp = { version = "1.7.0", features = ["server", "transport-io", "macros", "schemars"] }
+# Reuses the reqwest already pulled in transitively by async-openai (same rustls TLS stack).
+reqwest = { version = "0.13", default-features = false, features = ["json", "rustls"] }
 schemars = "1.2.1"
 serde = { version = "1.0.228", features = ["derive"] }
 serde_json = "1.0.150"

@@ -718,6 +718,7 @@ dependencies = [
  "anyhow",
  "async-openai",
  "base64",
+ "reqwest",
  "rmcp",
  "schemars",
  "serde",
